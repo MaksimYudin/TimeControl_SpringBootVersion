@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.russianfeature.model">
+
+    <class name="GroupDOO" table="group_doo">
+        <id name="id" type="int" column="id" >
+            <generator class="increment" />
+        </id>
+
+        <property name="id" not-null="true" insert="false" update="false" unique="true">
+            <column name="id" />
+        </property>
+        <property name="createDate" not-null="true">
+            <column name="createDate" />
+        </property>
+        <property name="groupName" not-null="true">
+            <column name="groupName" />
+        </property>
+        <property name="comment">
+            <column name="comment" />
+        </property>
+        <property name="lastEditDate" not-null="true">
+            <column name="lastEditDate" />
+        </property>
+        <property name="editUserId" not-null="true">
+            <column name="editUserId" />
+        </property>
+        <!--<many-to-one name = "editUserId" column = "editUserId"
+                     class="User" not-null="true"/>-->
+    </class>
+
+</hibernate-mapping>

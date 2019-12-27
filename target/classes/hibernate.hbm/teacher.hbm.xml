@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.russianfeature.model">
+
+    <class name="Teacher" table="teacher">
+        <id name="id" type="int" column="id" >
+            <generator class="increment" />
+        </id>
+
+        <property name="id" not-null="true" insert="false" update="false" unique="true">
+            <column name="id" />
+        </property>
+        <property name="firstName" not-null="true">
+            <column name="firstName" />
+        </property>
+        <property name="secondName" not-null="true">
+            <column name="secondName" />
+        </property>
+        <property name="lastName" not-null="true">
+            <column name="lastName" />
+        </property>
+        <property name="comment">
+            <column name="comment" />
+        </property>
+        <property name="createDate" not-null="true">
+            <column name="createDate" />
+        </property>
+        <property name="birthDate" not-null="true">
+            <column name="birthDate" />
+        </property>
+        <property name="startWorkDate" not-null="true">
+            <column name="startWorkDate" />
+        </property>
+        <property name="endWorkDate" not-null="true">
+            <column name="endWorkDate" />
+        </property>
+        <property name="changeDate" not-null="true">
+            <column name="changeDate" />
+        </property>
+        <property name="changeAuthorId" not-null="true">
+            <column name="changeAuthorId" />
+        </property>
+    </class>
+
+</hibernate-mapping>

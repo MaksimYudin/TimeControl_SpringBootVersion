@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.russianfeature.model">
+
+    <class name="Student" table="student">
+        <id name="id" type="int" column="id" >
+            <generator class="increment" />
+        </id>
+
+        <property name="id" not-null="true" insert="false" update="false" unique="true">
+            <column name="id" />
+        </property>
+        <property name="firstName" not-null="true">
+            <column name="firstName" />
+        </property>
+        <property name="secondName" not-null="true">
+            <column name="secondName" />
+        </property>
+        <property name="lastName" not-null="true">
+            <column name="lastName" />
+        </property>
+        <property name="comment">
+            <column name="comment" />
+        </property>
+        <property name="createDate" not-null="true">
+            <column name="createDate" />
+        </property>
+        <property name="birthDate" not-null="true">
+            <column name="birthDate" />
+        </property>
+    </class>
+
+</hibernate-mapping>

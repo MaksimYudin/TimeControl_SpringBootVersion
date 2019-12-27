@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="190.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.russianfeature.controllers.NotificationFormController">
+    <children>
+        <Button fx:id="btnOK" layoutX="151.0" layoutY="150.0" mnemonicParsing="false" onAction="#btnOKOnClick" prefHeight="26.0" prefWidth="110.0" text="OK" />
+        <Label fx:id="msgLabel" layoutX="27.0" layoutY="8.0" prefHeight="131.0" prefWidth="358.0" wrapText="true">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
